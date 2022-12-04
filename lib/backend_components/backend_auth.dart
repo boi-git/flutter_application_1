@@ -1,13 +1,6 @@
-// ignore_for_file: avoid_print
+import '../components/constants/importstaff.dart';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-
-import 'package:flutter/material.dart';
-
-import '../pages/login_page.dart';
-import '../pages/main_menu.dart';
-
+final NavigationService _navigationService = locator<NavigationService>();
 Future<User?> loginUsingEmailPassword1(
     {required String username,
     required String password,
@@ -40,9 +33,14 @@ Future<void> loginWithUsername(
       username: email, password: password, context: context);
   print(user);
   if (user != null) {
-    Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => MainMenu(
-              username: email,
-            )));
+    _navigationService.navigateTo(MainMenuRoute, arguments: email);
+    // Navigator.of(context).pushReplacement(
+    //   MaterialPageRoute(
+    //     builder: (context) => MainMenu(
+    //       username: email,
+    //     ),
+    //   ),
+    // )
+    ;
   }
 }

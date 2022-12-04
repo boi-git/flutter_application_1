@@ -1,20 +1,13 @@
 // ignore_for_file: prefer_const_constructors, no_logic_in_create_state
 
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/chat_temp.dart';
-import 'package:flutter_application_1/pages/profile_page.dart';
-import '../backend_components/backend_firebase.dart';
-import '../components/constants/colourandfont.dart';
-import '../components/customappbar.dart';
+import 'package:flutter_application_1/components/constants/importstaff.dart';
 import '../backend_components/user.dart' as user;
-import '../components/custombuilder.dart';
 
 int _selectedIndex = 0;
 
 class MainMenu extends StatefulWidget {
-  final String username;
-  const MainMenu({
+  late String username;
+  MainMenu({
     super.key,
     required this.username,
   });
@@ -40,8 +33,23 @@ class _MainMenuState extends State<MainMenu> {
     return Scaffold(
       appBar: CustomAppBar(),
       backgroundColor: whitecolor,
-      body: tabs(username)[_selectedIndex],
-      bottomNavigationBar: customBtmNavBar(),
+      body: Center(
+        child: StreamBuilder<List<user.Classes>>(
+          stream: readClassQuerywithUsername(username),
+          builder: (context, snapshot) {
+            if (snapshot.hasError) {
+              return Text('Error  qwe: ${snapshot.error}');
+            } else if (snapshot.hasData) {
+              final users = snapshot.data!;
+              return ListView(
+                children: users.map(buildClass).toList(),
+              );
+            } else {
+              return Center(child: CircularProgressIndicator());
+            }
+          },
+        ),
+      ),
     );
   }
 

@@ -1,12 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:flutter/material.dart';
-import '../backend_components/backend_firebase.dart';
+import 'package:flutter_application_1/components/constants/importstaff.dart';
+
 import '../backend_components/user.dart' as user;
-import '../components/constants/colourandfont.dart';
-import '../components/custombuilder.dart';
-import '../components/customglassmorphism.dart';
-import '../components/customsearchbar.dart';
 
 class BackgroundProfilePage extends StatefulWidget {
   const BackgroundProfilePage({super.key});
@@ -54,12 +50,12 @@ class _BackgroundProfilePageState extends State<BackgroundProfilePage> {
               //       });
               //     }),
               //   ),
+              // // ),
+              // SearchBar(
+              //   onChanged: (String z) {
+              //     name = z;
+              //   },
               // ),
-              SearchBar(
-                onChanged: (String z) {
-                  name = z;
-                },
-              ),
               Spacer(),
               Row(
                 children: [

@@ -1,19 +1,20 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_application_1/components/constants/route_paths.dart';
-import 'package:flutter_application_1/pages/chat_temp.dart';
-import 'package:flutter_application_1/pages/login_page.dart';
-import 'package:flutter_application_1/pages/main_menu.dart';
+import 'importstaff.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case ChatRoute:
       return MaterialPageRoute(builder: (context) => const ChatTemp());
+    case ChatProfile:
+      return MaterialPageRoute(builder: (context) => const ClassBackDetail());
     case MainMenuRoute:
+      var username = settings.arguments as String;
       return MaterialPageRoute(
-          builder: (context) => const MainMenu(
-                username: '1000146',
-              ));
+        builder: (context) => MainMenu(
+          username: username,
+        ),
+      );
+    case LoginRoute:
+      return MaterialPageRoute(builder: (context) => const LoginPage());
     default:
       return MaterialPageRoute(
         builder: (context) => Scaffold(

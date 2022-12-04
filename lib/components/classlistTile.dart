@@ -1,7 +1,5 @@
 // ignore: file_names
-import 'package:flutter/material.dart';
-
-import 'constants/colourandfont.dart';
+import 'package:flutter_application_1/components/constants/importstaff.dart';
 
 class ClassListTile extends StatelessWidget {
   final String coursecode;

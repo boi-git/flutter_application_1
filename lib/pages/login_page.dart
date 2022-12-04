@@ -1,12 +1,5 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
-
-import 'package:flutter/material.dart';
-import '../backend_components/backend_auth.dart';
-import '../components/constants/colourandfont.dart';
-import '../components/forgetpassword.dart';
-import '../components/roundedbutton.dart';
-import '../components/roundedinputwidget.dart';
-import '../components/roundedpasswordwidget.dart';
+import 'package:flutter_application_1/components/constants/importstaff.dart';
 
 TextEditingController emailController = TextEditingController();
 TextEditingController passwordController = TextEditingController();
