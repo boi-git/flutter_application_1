@@ -6,8 +6,8 @@ import '../backend_components/user.dart' as user;
 int _selectedIndex = 0;
 
 class MainMenu extends StatefulWidget {
-  late String username;
-  MainMenu({
+  final String username;
+  const MainMenu({
     super.key,
     required this.username,
   });
