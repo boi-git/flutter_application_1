@@ -19,7 +19,6 @@ class _ChatTempState extends State<ChatTemp> {
             _navigationService.navigateTo(ChatProfile);
             // Navigator.of(context).pushReplacement(MaterialPageRoute(
             //     builder: (context) => const ClassBackDetail()))
-            ;
           },
           child: const Text('go'),
         ),
