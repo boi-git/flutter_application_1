@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "H:\\Coding\\Coding\\UI\\flutter_application_1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "H:\\Coding\\Coding\\UI\\flutter_application_1\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

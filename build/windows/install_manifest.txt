@@ -1,0 +1,13 @@
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/lib/images/Bg1.JPG
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/lib/images/Bg2.JPG
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/lib/images/iiumlogo.png
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/packages/line_awesome_flutter/lib/fonts/LineAwesome.ttf
+C:/Users/ADMIN/Desktop/chatpage/flutter_application_1/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

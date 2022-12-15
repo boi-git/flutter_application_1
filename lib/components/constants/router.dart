@@ -3,14 +3,20 @@ import 'importstaff.dart';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case ChatRoute:
-      return MaterialPageRoute(builder: (context) => const ChatTemp());
+      return MaterialPageRoute(
+          builder: (context) => ChatTemp(
+              groupId: "0n2hoCCGmOrA4sRUoSk6",
+              groupName: "Mathematics for Computing I",
+              userName: "1000117"));
     case ChatProfile:
       return MaterialPageRoute(builder: (context) => const ClassBackDetail());
     case MainMenuRoute:
       var username = settings.arguments as String;
       return MaterialPageRoute(
         builder: (context) => MainMenu(
-          username: username,
+          userName: username,
+          groupId: "0n2hoCCGmOrA4sRUoSk6",
+          groupName: "Mathematics for Computing I",
         ),
       );
     case LoginRoute:
