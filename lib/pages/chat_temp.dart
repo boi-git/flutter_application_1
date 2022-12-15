@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import 'package:flutter_application_1/components/constants/importstaff.dart';
-import '../backend_components/user.dart' as user;
-=======
 /*import 'package:flutter_application_1/components/constants/importstaff.dart';
->>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
 
 class ChatTemp extends StatefulWidget {
   final String coursename;
@@ -55,6 +50,7 @@ import 'package:flutter_application_1/components/message_tile.dart';
 import 'package:flutter_application_1/components/widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/main_menu.dart';
 
 class ChatTemp extends StatefulWidget {
   final String groupId;
