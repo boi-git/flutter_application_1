@@ -1,10 +1,14 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "H:\\Coding\\Coding\\UI with New Backend\\flutter_application_1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-am\\values-am.xml",
+=======
+            "outputFile": "C:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-am\\values-am.xml",
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
             "map": [
                 {
-                    "source": "C:\\Users\\Taz\\.gradle\\caches\\transforms-3\\38e30c664341fe5bfcc1d9de04582443\\transformed\\browser-1.4.0\\res\\values-am\\values-am.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\38e30c664341fe5bfcc1d9de04582443\\transformed\\browser-1.4.0\\res\\values-am\\values-am.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +25,28 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Taz\\.gradle\\caches\\transforms-3\\0ce731f8c62e88af9af421907435d7da\\transformed\\core-1.8.0\\res\\values-am\\values-am.xml",
+=======
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\3ee0f8915dc9bf42c60f3eef0b7bd28a\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-am\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "127",
+                        "endOffsets": "322"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "980",
+                        "endColumns": "131",
+                        "endOffsets": "1107"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\aa701b47cec244085d46a1a42fcc7fb9\\transformed\\core-1.6.0\\res\\values-am\\values-am.xml",
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +63,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Taz\\.gradle\\caches\\transforms-3\\19fea4fb28dedd992824e13cc158e7a1\\transformed\\jetified-play-services-base-18.0.1\\res\\values-am\\values.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\19fea4fb28dedd992824e13cc158e7a1\\transformed\\jetified-play-services-base-18.0.1\\res\\values-am\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -53,6 +78,7 @@
                         "endColumns": "101,138,121,101,126,122,107,101,127,102,144,122,134,126,59,56,70",
                         "endOffsets": "2820,2959,3081,3183,3310,3433,3541,3643,3903,4006,4151,4274,4409,4536,4596,4653,4724"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\Taz\\.gradle\\caches\\transforms-3\\3ee0f8915dc9bf42c60f3eef0b7bd28a\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-am\\values.xml",
@@ -87,6 +113,8 @@
                         "endColumns": "97,97,105,85,102,116,77,75,90,92,91,93,99,92,94,92,90,90,79,99,99,95,101,99,98,149,95,79",
                         "endOffsets": "198,296,402,488,591,708,786,862,953,1046,1138,1232,1332,1425,1520,1613,1704,1795,1875,1975,2075,2171,2273,2373,2472,2622,2718,5198"
                     }
+=======
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
                 }
             ]
         }

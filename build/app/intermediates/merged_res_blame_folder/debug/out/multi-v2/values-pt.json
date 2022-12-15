@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "H:\\Coding\\Coding\\UI with New Backend\\flutter_application_1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
             "map": [
                 {
@@ -39,6 +40,12 @@
                 },
                 {
                     "source": "C:\\Users\\Taz\\.gradle\\caches\\transforms-3\\38e30c664341fe5bfcc1d9de04582443\\transformed\\browser-1.4.0\\res\\values-pt\\values-pt.xml",
+=======
+            "outputFile": "C:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\38e30c664341fe5bfcc1d9de04582443\\transformed\\browser-1.4.0\\res\\values-pt\\values-pt.xml",
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -55,7 +62,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Taz\\.gradle\\caches\\transforms-3\\0ce731f8c62e88af9af421907435d7da\\transformed\\core-1.8.0\\res\\values-pt\\values-pt.xml",
+=======
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\aa701b47cec244085d46a1a42fcc7fb9\\transformed\\core-1.6.0\\res\\values-pt\\values-pt.xml",
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
