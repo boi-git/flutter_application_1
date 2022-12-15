@@ -1,10 +1,36 @@
 {
     "logs": [
         {
-            "outputFile": "H:\\Coding\\Coding\\UI\\flutter_application_1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+<<<<<<< HEAD
+            "outputFile": "H:\\Coding\\Coding\\UI with New Backend\\flutter_application_1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Taz\\.gradle\\caches\\transforms-3\\aa701b47cec244085d46a1a42fcc7fb9\\transformed\\core-1.6.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Taz\\.gradle\\caches\\transforms-3\\abd2422cf6d4d9ae0ae28f9e3763c0c7\\transformed\\appcompat-1.3.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Taz\\.gradle\\caches\\transforms-3\\0ce731f8c62e88af9af421907435d7da\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+=======
+            "outputFile": "C:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\aa701b47cec244085d46a1a42fcc7fb9\\transformed\\core-1.6.0\\res\\values-v16\\values-v16.xml",
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

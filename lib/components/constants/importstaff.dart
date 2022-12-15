@@ -43,3 +43,9 @@ export 'package:flutter_application_1/pages/chat_temp.dart';
 export 'package:flutter_application_1/pages/login_page.dart';
 export 'package:flutter_application_1/pages/main_menu.dart';
 export 'package:flutter_application_1/pages/profile_page.dart';
+export 'package:flutter_application_1/components/classlistTile.dart';
+
+export 'package:firebase_storage/firebase_storage.dart';
+export 'package:flutter/services.dart';
+export 'package:image_cropper/image_cropper.dart';
+export 'package:image_picker/image_picker.dart';

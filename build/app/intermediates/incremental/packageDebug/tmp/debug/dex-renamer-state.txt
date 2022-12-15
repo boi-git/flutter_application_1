@@ -1,19 +1,35 @@
-#Mon Dec 05 02:55:21 MYT 2022
+<<<<<<< HEAD
+#Wed Dec 14 20:54:21 MYT 2022
+=======
+#Sun Dec 11 01:33:40 SGT 2022
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
 path.4=8/classes.dex
 path.3=1/classes.dex
 path.2=0/classes.dex
 path.1=0/classes.dex
 path.5=classes2.dex
 path.0=classes.dex
-base.4=H\:\\Coding\\Coding\\UI\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.3=H\:\\Coding\\Coding\\UI\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.2=H\:\\Coding\\Coding\\UI\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.1=H\:\\Coding\\Coding\\UI\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
-base.0=H\:\\Coding\\Coding\\UI\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+<<<<<<< HEAD
+base.4=H\:\\Coding\\Coding\\UI with New Backend\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.3=H\:\\Coding\\Coding\\UI with New Backend\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.2=H\:\\Coding\\Coding\\UI with New Backend\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=H\:\\Coding\\Coding\\UI with New Backend\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.0=H\:\\Coding\\Coding\\UI with New Backend\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+base.4=C\:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.3=C\:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.2=C\:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 renamed.5=classes6.dex
 renamed.4=classes5.dex
-base.5=H\:\\Coding\\Coding\\UI\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+<<<<<<< HEAD
+base.5=H\:\\Coding\\Coding\\UI with New Backend\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+=======
+base.5=C\:\\Users\\ADMIN\\Documents\\IIUM\\SEM 1 SESSION 2022-2023\\FYP2\\chatpage\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
