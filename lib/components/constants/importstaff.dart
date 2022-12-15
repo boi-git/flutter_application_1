@@ -2,7 +2,7 @@ export 'package:flutter/material.dart';
 export 'package:flutter_application_1/components/constants/route_paths.dart';
 export 'package:flutter_application_1/pages/chat_temp.dart';
 export 'package:flutter_application_1/pages/login_page.dart';
-export 'package:flutter_application_1/pages/main_menu.dart';
+
 export '../../pages/class_profile.dart';
 
 export 'package:cloud_firestore/cloud_firestore.dart';
@@ -41,7 +41,7 @@ export 'package:flutter_application_1/components/locator.dart';
 export 'package:flutter_application_1/components/services/nav_services.dart';
 export 'package:flutter_application_1/pages/chat_temp.dart';
 export 'package:flutter_application_1/pages/login_page.dart';
-export 'package:flutter_application_1/pages/main_menu.dart';
+
 export 'package:flutter_application_1/pages/profile_page.dart';
 export 'package:flutter_application_1/components/classlistTile.dart';
 
