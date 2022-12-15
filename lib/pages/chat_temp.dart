@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+import 'package:flutter_application_1/components/constants/importstaff.dart';
+import '../backend_components/user.dart' as user;
+=======
 /*import 'package:flutter_application_1/components/constants/importstaff.dart';
+>>>>>>> 0e913141d6c0a8a55879e5a6d237e4bf9e0385af
 
 class ChatTemp extends StatefulWidget {
   final String coursename;
@@ -44,10 +49,12 @@ class _ChatTempState extends State<ChatTemp> {
 }*/
 
 import 'package:flutter_application_1/components/constants/importstaff.dart';
-
+import 'package:flutter_application_1/main.dart';
 import 'package:flutter_application_1/backend_components/database_service.dart';
 import 'package:flutter_application_1/components/message_tile.dart';
 import 'package:flutter_application_1/components/widgets.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 
 class ChatTemp extends StatefulWidget {
   final String groupId;
