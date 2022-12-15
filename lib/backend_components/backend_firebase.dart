@@ -103,3 +103,13 @@ Future<user.Classes?> getDataClass(String username) async {
     return null;
   }
 }
+
+Future<user.Classes?> getEmail(String username) async {
+  final doc = fs.FirebaseFirestore.instance.collection('classlist');
+  final docs1 = await doc.where('coursecode', isEqualTo: username).get();
+  if (docs1.docs.first.exists) {
+    return user.Classes.fromJson(docs1.docs.first.data());
+  } else {
+    return null;
+  }
+}

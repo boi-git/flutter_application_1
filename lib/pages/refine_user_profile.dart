@@ -36,9 +36,17 @@ class _UserBackDetailState extends State<UserBackDetail> {
 
     FirebaseFirestore.instance
         .collection('users')
-        //!TODO .doc(user.id after log in) or create new query
-        .doc('wsW1Un8mCzniLW4Yyn6Y')
-        .set({folder: url}, SetOptions(merge: true)).then((value) {});
+        .where('username', isEqualTo: username)
+        .get()
+        .then((response) {
+      for (var doc in response.docs) {
+        FirebaseFirestore.instance
+            .collection('users')
+            .doc(doc.id)
+            .set({folder: url}, SetOptions(merge: true)).then((value) {});
+      }
+    });
+
     print(url);
   }
 
@@ -95,7 +103,7 @@ class _UserBackDetailState extends State<UserBackDetail> {
                   Container(
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: snapshot.data!.first.backgroundimage != null
+                          image: snapshot.data!.first.backgroundimage != ''
                               ? NetworkImage(snapshot
                                   .data!.first.backgroundimage
                                   .toString())
@@ -376,15 +384,21 @@ class _UserBackDetailState extends State<UserBackDetail> {
                             color: darkColor,
                             textColor: orangeColor,
                             press: () {
-                              //wsW1Un8mCzniLW4Yyn6Y
-
                               FirebaseFirestore.instance
                                   .collection('users')
-                                  //!TODO .doc(user.id after log in) or create new query
-                                  .doc('wsW1Un8mCzniLW4Yyn6Y')
-                                  .set({'about': aboutController.text},
-                                      SetOptions(merge: true)).then((value) {
-                                sumbit();
+                                  .where('username', isEqualTo: username)
+                                  .get()
+                                  .then((response) {
+                                for (var doc in response.docs) {
+                                  FirebaseFirestore.instance
+                                      .collection('users')
+                                      .doc(doc.id)
+                                      .set({
+                                    'about': aboutController.text
+                                  }, SetOptions(merge: true)).then((value) {
+                                    sumbit();
+                                  });
+                                }
                               });
                             }),
                       ),

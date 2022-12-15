@@ -1,4 +1,5 @@
 import '../components/constants/importstaff.dart';
+import '../backend_components/user.dart' as user;
 
 final NavigationService _navigationService = locator<NavigationService>();
 Future<User?> loginUsingEmailPassword1(
@@ -13,7 +14,9 @@ Future<User?> loginUsingEmailPassword1(
         .where("username", isEqualTo: username)
         .get();
     UserCredential userCredential = await auth.signInWithEmailAndPassword(
-        email: snap.docs[0]["email"], password: password);
+        email: snap.docs[0]['email'], password: password);
+
+    //1000124@gmail.com
     user = userCredential.user;
   } on FirebaseAuthException catch (e) {
     if (e.code == "user-not-found") {
@@ -34,13 +37,5 @@ Future<void> loginWithUsername(
   print(user);
   if (user != null) {
     _navigationService.navigateTo(MainMenuRoute, arguments: email);
-    // Navigator.of(context).pushReplacement(
-    //   MaterialPageRoute(
-    //     builder: (context) => MainMenu(
-    //       username: email,
-    //     ),
-    //   ),
-    // )
-    ;
   }
 }

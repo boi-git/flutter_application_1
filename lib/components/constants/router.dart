@@ -1,4 +1,5 @@
-import '../../pages/main_menu.dart';
+import 'package:flutter_application_1/pages/main_menu.dart';
+
 import 'importstaff.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -15,7 +16,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
                 coursename: '',
               ));
     case MainMenuRoute:
-      var username = settings.arguments as String;
+      var username = '1000124'; //settings.arguments as String;
       return MaterialPageRoute(
         builder: (context) => MainMenu(
           userName: username,

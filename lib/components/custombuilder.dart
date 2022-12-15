@@ -54,68 +54,70 @@ List listmember(user.Classes user, int number) {
 
 //create a new widget for class profile
 Widget buildText(user.User user) {
-  return Column(
-    mainAxisAlignment: MainAxisAlignment.start,
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      Row(
-        children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                user.name,
-                style: header1(orangeColor),
-              ),
-              Text(
-                user.role,
-                style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-              ),
-            ],
-          ),
-          Spacer(),
-        ],
-      ),
-      Spacer(),
-      Text(
-        'Level',
-        style: TextStyle(
-            color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
-      ),
-      Text(
-        '4',
-        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-      ),
-      Text(
-        'Degree',
-        style: TextStyle(
-            color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
-      ),
-      Text(
-        'Computer Science',
-        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-      ),
-      Text(
-        'Major',
-        style: TextStyle(
-            color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
-      ),
-      Text(
-        'Software Engineering',
-        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-      ),
-      Spacer(),
-      Text(
-        'About',
-        style: TextStyle(
-            color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
-      ),
-      Text(
-        user.about != null ? user.about : 'data',
-        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-      ),
-      Spacer(),
-    ],
+  return Expanded(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  user.name,
+                  style: header1(orangeColor),
+                ),
+                Text(
+                  user.role,
+                  style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+                ),
+              ],
+            ),
+            Spacer(),
+          ],
+        ),
+        Spacer(),
+        Text(
+          'Level',
+          style: TextStyle(
+              color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
+        ),
+        Text(
+          '4',
+          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+        ),
+        Text(
+          'Degree',
+          style: TextStyle(
+              color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
+        ),
+        Text(
+          'Computer Science',
+          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+        ),
+        Text(
+          'Major',
+          style: TextStyle(
+              color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
+        ),
+        Text(
+          'Software Engineering',
+          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+        ),
+        Spacer(),
+        Text(
+          'About',
+          style: TextStyle(
+              color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
+        ),
+        Text(
+          user.about ?? 'data',
+          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+        ),
+        Spacer(),
+      ],
+    ),
   );
 }
 

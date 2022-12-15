@@ -19,13 +19,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(backgroundColor: Colors.grey[800]),
-      // onGenerateRoute: generateRoute,
-      // initialRoute: MainMenuRoute,
-      // navigatorKey: locator<NavigationService>().navigatorKey,
+      onGenerateRoute: generateRoute,
+      initialRoute: LoginRoute,
+      navigatorKey: locator<NavigationService>().navigatorKey,
+      //home: LoginPage(),
       debugShowCheckedModeBanner: false,
-      home: const UserBackDetail(
-        username: '1000076',
-      ),
     );
   }
 }

@@ -74,22 +74,22 @@ class _ChatTempState extends State<ChatTemp> {
 
   @override
   void initState() {
-    getChatandAdmin();
+    //getChatandAdmin();
     super.initState();
   }
 
-  getChatandAdmin() {
-    DatabaseService().getChats(widget.groupId).then((val) {
-      setState(() {
-        chats = val;
-      });
-    });
-    DatabaseService().getGroupAdmin(widget.groupId).then((val) {
-      setState(() {
-        admin = val;
-      });
-    });
-  }
+  // getChatandAdmin() {
+  //   DatabaseService().getChats(widget.groupId).then((val) {
+  //     setState(() {
+  //       chats = val;
+  //     });
+  //   });
+  //   DatabaseService().getGroupAdmin(widget.groupId).then((val) {
+  //     setState(() {
+  //       admin = val;
+  //     });
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
