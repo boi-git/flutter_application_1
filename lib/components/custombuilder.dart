@@ -1,19 +1,16 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:flutter_application_1/components/constants/route_paths.dart'
-    as routes;
-import 'package:flutter/material.dart';
-import 'package:flutter_application_1/components/locator.dart';
-import 'package:flutter_application_1/components/services/nav_services.dart';
-import '../backend_components/user.dart' as user;
-import 'classlisttile.dart';
-import 'constants/colourandfont.dart';
+import 'dart:typed_data';
+
+import 'package:flutter_application_1/backend_components/user.dart' as user;
+import 'package:flutter_application_1/components/constants/importstaff.dart';
 
 final NavigationService _navigationService = locator<NavigationService>();
 
 Widget buildClass(user.Classes user) {
   return GestureDetector(
     onTap: (() async {
-      _navigationService.navigateTo(routes.ChatRoute);
+      _navigationService.navigateTo(ChatRoute,
+          arguments: user.coursecode.toString());
 
       print(
         user.coursecode,
@@ -27,60 +24,144 @@ Widget buildClass(user.Classes user) {
   );
 }
 
-Widget buildUser(user.User user) {
-  return ListTile(
-      leading: CircleAvatar(child: Text(user.name)), title: Text(user.role));
+Widget buildclassMember(user.Classes user) {
+  return Expanded(
+    child: ListView.builder(
+        itemCount: user.members.length,
+        itemBuilder: ((context, index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: Center(
+              child: CircleAvatar(
+                child: GestureDetector(
+                  onTap: () {
+                    print(user.members[index]);
+                  },
+                  child: Text(
+                    user.members[index],
+                  ),
+                ),
+              ),
+            ),
+          );
+        })),
+  );
+}
+
+List listmember(user.Classes user, int number) {
+  return user.members;
 }
 
 //create a new widget for class profile
 Widget buildText(user.User user) {
-  return Expanded(
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          user.name,
-          style: header1(orangeColor),
-        ),
-        Text(
-          user.role,
-          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-        ),
-        Spacer(),
-        Text(
-          'Degree',
-          style: TextStyle(
-              color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
-        ),
-        Text(
-          'Computer Science',
-          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-        ),
-        Text(
-          'Major',
-          style: TextStyle(
-              color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
-        ),
-        Text(
-          'Software Engineering',
-          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-        ),
-        Spacer(),
-        Text(
-          'About',
-          style: TextStyle(
-              color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
-        ),
-        Text(
-          aboutText,
-          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-        ),
-        Spacer(),
-      ],
-    ),
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.start,
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      Row(
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                user.name,
+                style: header1(orangeColor),
+              ),
+              Text(
+                user.role,
+                style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+              ),
+            ],
+          ),
+          Spacer(),
+        ],
+      ),
+      Spacer(),
+      Text(
+        'Level',
+        style: TextStyle(
+            color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
+      ),
+      Text(
+        '4',
+        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+      ),
+      Text(
+        'Degree',
+        style: TextStyle(
+            color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
+      ),
+      Text(
+        'Computer Science',
+        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+      ),
+      Text(
+        'Major',
+        style: TextStyle(
+            color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
+      ),
+      Text(
+        'Software Engineering',
+        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+      ),
+      Spacer(),
+      Text(
+        'About',
+        style: TextStyle(
+            color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16),
+      ),
+      Text(
+        user.about != null ? user.about : 'data',
+        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+      ),
+      Spacer(),
+    ],
   );
 }
 
 const aboutText =
-    'Aliquam gravida mattis nisl, sodales eleifend magna fringilla vel. Donec et augue varius, malesuada dolor sed, mattis ante. Mauris egestas non lectus sit amet tempus. Pellentesque vel leo et massa mattis feugiat vel maximus dolor. ';
+    'Donec et augue varius, malesuada dolor sed, mattis ante. Pellentesque vel leo et massa mattis feugiat vel maximus dolor. ';
+
+Widget buildDisplayImage(user.User user) {
+  if (user.displayimage != '') {
+    return CircleAvatar(
+      radius: 35,
+      backgroundColor: Colors.transparent,
+      backgroundImage: NetworkImage(user.displayimage),
+    );
+  } else {
+    return CircleAvatar(
+        radius: 35,
+        backgroundColor: darkColor,
+        child: Icon(
+          Icons.no_accounts,
+          color: orangeColor,
+        ));
+  }
+}
+
+final placeholderimage =
+    'https://firebasestorage.googleapis.com/v0/b/flutter-log-in-d62c8.appspot.com/o/iiumlogo.png?alt=media&token=8bcf0d8e-b2ff-48e3-9cf3-4071b6c11f93';
+Widget buildBackgroundImage(
+  user.User user,
+) {
+  if (user.backgroundimage != '') {
+    return Container(
+        decoration: BoxDecoration(
+      image: DecorationImage(
+        image: NetworkImage(user.backgroundimage),
+      ),
+    ));
+  } else {
+    return Container(
+        decoration: BoxDecoration(
+      image: DecorationImage(
+        image: NetworkImage(placeholderimage),
+      ),
+    ));
+  }
+}
+
+Widget buildtry(user.User user) {
+  return Text(user.name);
+}

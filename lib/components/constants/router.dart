@@ -3,16 +3,26 @@ import 'importstaff.dart';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case ChatRoute:
-      return MaterialPageRoute(builder: (context) => const ChatTemp());
-    case ChatProfile:
-      return MaterialPageRoute(builder: (context) => const ClassBackDetail());
-    case MainMenuRoute:
-      var username = settings.arguments as String;
+      var coursename = settings.arguments as String;
       return MaterialPageRoute(
-        builder: (context) => MainMenu(
-          username: username,
+          builder: (context) => ChatTemp(
+                coursename: coursename,
+              ));
+
+    case ChatProfile:
+      var coursename = settings.arguments as String;
+
+      return MaterialPageRoute(
+          builder: (context) => ClassBackDetail(coursename: coursename));
+
+    case MainMenuRoute:
+      var username = 'x'; //settings.arguments as String;
+      return MaterialPageRoute(
+        builder: (context) => const MainMenu(
+          username: '1000146',
         ),
       );
+
     case LoginRoute:
       return MaterialPageRoute(builder: (context) => const LoginPage());
     default:

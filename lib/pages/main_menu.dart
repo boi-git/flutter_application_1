@@ -87,26 +87,26 @@ class _MainMenuState extends State<MainMenu> {
 }
 
 //why not user username as uid?
-List<Widget> tabs(String username) {
-  return [
-    Center(
-      child: StreamBuilder<List<user.Classes>>(
-        stream: readClassQuerywithUsername(username),
-        builder: (context, snapshot) {
-          if (snapshot.hasError) {
-            return Text('Error  qwe: ${snapshot.error}');
-          } else if (snapshot.hasData) {
-            final users = snapshot.data!;
-            return ListView(
-              children: users.map(buildClass).toList(),
-            );
-          } else {
-            return Center(child: CircularProgressIndicator());
-          }
-        },
-      ),
-    ),
-    ChatTemp(),
-    BackgroundProfilePage()
-  ];
-}
+// List<Widget> tabs(String username) {
+//   return [
+//     Center(
+//       child: StreamBuilder<List<user.Classes>>(
+//         stream: readClassQuerywithUsername(username),
+//         builder: (context, snapshot) {
+//           if (snapshot.hasError) {
+//             return Text('Error  qwe: ${snapshot.error}');
+//           } else if (snapshot.hasData) {
+//             final users = snapshot.data!;
+//             return ListView(
+//               children: users.map(buildClass).toList(),
+//             );
+//           } else {
+//             return Center(child: CircularProgressIndicator());
+//           }
+//         },
+//       ),
+//     ),
+//     ChatTemp(),
+//     BackgroundProfilePage()
+//   ];
+// }

@@ -2,6 +2,22 @@ import 'package:flutter/material.dart';
 
 import '../customwidget.dart';
 
+const kHeadTextStyle = TextStyle(
+  color: Colors.black,
+  fontSize: 24,
+  fontWeight: FontWeight.bold,
+);
+
+const kHeadSubtitleTextStyle = TextStyle(
+  fontSize: 18,
+  color: Colors.black87,
+);
+
+TextStyle h1orange() {
+  return TextStyle(
+      color: orangeColor, fontWeight: FontWeight.w500, fontSize: 16);
+}
+
 //main color
 Color orangeColor = const Color.fromARGB(255, 213, 159, 15);
 Color whitecolor = Colors.white;

@@ -1,4 +1,6 @@
 import 'package:flutter_application_1/components/constants/importstaff.dart';
+import 'package:flutter_application_1/pages/refine_class_profile.dart';
+import 'package:flutter_application_1/pages/refine_user_profile.dart';
 
 void main() async {
   setupLocator();
@@ -17,10 +19,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(backgroundColor: Colors.grey[800]),
-      onGenerateRoute: generateRoute,
-      initialRoute: LoginRoute,
-      navigatorKey: locator<NavigationService>().navigatorKey,
+      // onGenerateRoute: generateRoute,
+      // initialRoute: MainMenuRoute,
+      // navigatorKey: locator<NavigationService>().navigatorKey,
       debugShowCheckedModeBanner: false,
+      home: const UserBackDetail(
+        username: '1000076',
+      ),
     );
   }
 }
