@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(backgroundColor: Colors.grey[800]),
-      onGenerateRoute: generateRoute,
-      initialRoute: LoginRoute,
-      navigatorKey: locator<NavigationService>().navigatorKey,
-      //home: LoginPage(),
+      // onGenerateRoute: generateRoute,
+      // initialRoute: LoginRoute,
+      // navigatorKey: locator<NavigationService>().navigatorKey,
+      home: ClassBackDetailRefined(coursename: 'CSCI 1303'),
       debugShowCheckedModeBanner: false,
     );
   }
